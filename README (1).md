@@ -53,11 +53,11 @@ This project involves preparing a dataset for use with Azure's Automated ML to i
 
 ![image](https://github.com/user-attachments/assets/47948605-5c6e-4773-950f-d679ca22cbcd)
 
-Showing all the runs under jobs
+## Showing all the runs under jobs
 
 ![image](https://github.com/user-attachments/assets/1c7b0d34-c032-49ea-8191-e4f2b44b3643)
 
-Entering Proj2ML and sorting by AUC for finding the best classification model
+### Entering Proj2ML and sorting by AUC for finding the best classification model
 
 ![image](https://github.com/user-attachments/assets/ffdd557d-1835-40a0-a1c8-b6b25cff6292)
 
@@ -94,33 +94,33 @@ Now we have the neccesary packets we can enable the application insights.
 
 ![image](https://github.com/user-attachments/assets/6e7742d8-0c9d-4522-9729-cabf8a5d62e8)
 
-Ensure that "service.update(enable_app_insights=True)" is set to true in the file logs.py
+### Ensure that "service.update(enable_app_insights=True)" is set to true in the file logs.py
 
 ![image](https://github.com/user-attachments/assets/d01a2ee4-f0bb-432d-8591-03b01cdd8c26)
 
-Run the "python logs.py" and the "Application insighs enable" will change to True in Azure.
+### Run the "python logs.py" and the "Application insighs enable" will change to True in Azure.
 
 ![image](https://github.com/user-attachments/assets/85286db3-e251-451b-a77e-c122f3ae2f3c)
 
-Giving access to insights:
+### Giving access to insights:
 
 ![image](https://github.com/user-attachments/assets/773fe305-a5f9-4a86-9ada-7802928a6431)
 
-Additionally, you can compare the logs.
+### Additionally, you can compare the logs.
 ![image](https://github.com/user-attachments/assets/ae939ceb-229b-49b4-9404-83f41bc8211e)
 
 
 ## Step 4: Swagger documentation
 
-Getting the Swagger URI to connection to local host.
+### Getting the Swagger URI to connection to local host.
 
 ![image](https://github.com/user-attachments/assets/0aac6484-5d1f-4b3e-8511-e1ddda6dff51)
 
-Make sure the file is in the same folder as Swagger.sh and Serve.py.
-Either download it manualle or use wget Swagger URI.
+### Make sure the file is in the same folder as Swagger.sh and Serve.py.
+### Either download it manualle or use wget Swagger URI.
 
-Run Swagger.sh and Serve.py and go to local host.
-Here you can access the API Documentation for the local swagger.json
+### Run Swagger.sh and Serve.py and go to local host.
+### Here you can access the API Documentation for the local swagger.json
 
 ![image](https://github.com/user-attachments/assets/25cd4f3b-a527-49b7-a047-d0aa78e1d041)
 
@@ -129,8 +129,8 @@ Here you can access the API Documentation for the local swagger.json
 
 ## Step 5: Consume Endpoint
 
-Edit the endpoint.py file's Scoring url and Key to match the endpoints.
-Aswell as ensuring the data inputs from swagger matches the ones in the file
+### Edit the endpoint.py file's Scoring url and Key to match the endpoints.
+### Aswell as ensuring the data inputs from swagger matches the ones in the file
 
 ![image](https://github.com/user-attachments/assets/e52277ef-efea-45c5-97b1-f2d878f28d36)
 
