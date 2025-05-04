@@ -1,55 +1,51 @@
 Operationalizing Machine Learning with Azure
 ======
+By Jacob Jensen, TDC Net
 
 # Overview
 
-This project demonstrates the use of Azure ML to operationalize an end-to-end machine learning pipeline from model training to API consuming in production with sufficient monitoring. 
+This project showcases how Azure Machine Learning can be used to build and deploy a full machine learning pipeline—from training models to serving predictions through an API in a production environment, complete with monitoring.
 
-The dataset we use is a marketing campaign that records people who contacted/answered the calls, and we seek to predict a yes/no answer to whether a person is a potential lead in this campaign.
+The dataset comes from a bank marketing campaign and contains information about individuals contacted via phone. The goal is to predict whether a person is likely to respond positively ("yes") and become a lead.
 
-Dataset URL: https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
+Dataset link: https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
 
-First, we use Azure ML Studio interface to register the dataset then create an Automated ML experiment for training classification models.
+We begin by using the Azure ML Studio interface to register the dataset and set up an Automated ML experiment to train classification models.
 
-Second, we deploy the best performance model as a prediction web service as a REST API endpoint. We have Application Insights enabled for collecting logs and Swagger specification available for viewing the API documentation. The web service API can be consumed by any standard HTTP client, and we will be using a Python script as an example.
+Once the training is complete, we deploy the best-performing model as a REST API web service. Application Insights is enabled to capture telemetry data, and the API comes with a Swagger definition for documentation. The endpoint can be accessed using any HTTP client—for example, a Python script.
 
-Third, we set up a Pipeline using Azure ML Python SDK in Jupyter Notebook to facilitate a similar workflow as we have just done previously using the web interface, but now it's done programmatically. Therefore, more automation capabilities are available, for example, automatically rerun the Pipeline for model retrain whenever there is dataset update or code change. This Pipeline can be integrated nicely into an existing CI/CD (e.g. Azure DevOps) that allows automatic model training and deployment. We can also pick and choose any model that looks better than the previous to deploy a new prediction service endpoint.
+Next, we replicate the workflow programmatically using the Azure ML Python SDK in a Jupyter Notebook. This approach allows for greater automation, such as retraining the model automatically when the dataset or code changes. The pipeline integrates smoothly with CI/CD tools like Azure DevOps, enabling automated model training and deployment. It also offers the flexibility to deploy updated models when performance improves.
 
-Finally, we publish the Pipeline endpoint that is also a REST API but for Pipeline execution. We use Jupyter Notebook to demonstrate a Pipeline trigger to make a new experiment.
+Finally, we publish the pipeline as a REST API endpoint, which can be triggered to start new experiments. A demonstration of this trigger is provided in the Jupyter Notebook.
 
 
 ## Architectural Diagram
 
 This is an architecture overview of the workflow and the scope of this project.
 
-![image](https://user-images.githubusercontent.com/4667129/129495120-9cd5f844-91c9-419d-b6ef-cc59846ec515.png)
+![image](https://github.com/user-attachments/assets/f4fc06ed-421b-41de-a73b-1792a1261303)
 
-The project includes registering dataset to use with Automated ML to determine the best model for production deployment as a REST API endpoint which will then be consumed by a REST client and also be managed by Python SDK for monitoring. Finally, a pipeline will be set up so that it can be triggered to execute whenever needed in the future.
+
+This project involves preparing a dataset for use with Azure's Automated ML to identify the most suitable model for deployment. The selected model is then published as a REST API, making it accessible to external clients. Additionally, the deployment is integrated with monitoring tools via the Python SDK. To streamline future use, a pipeline is configured to allow the entire process to be triggered automatically as needed.
 
 # Key Steps
- 
-## Step 0: Resource Provision
-### Create Azure Service Principle
-
-![image](https://user-images.githubusercontent.com/4667129/129117771-8e9fdf44-a2f8-434c-bff8-a5d10ef8bb25.png)
-
-Get object Id
-
-![image](https://user-images.githubusercontent.com/4667129/129118657-992a03e9-6a9b-4bdf-8d13-6c9fb2573741.png)
-
-
-### Share workspace to the newly created account
-![image](https://user-images.githubusercontent.com/4667129/129118415-ba4bc243-2efe-4beb-bcb9-a14adca4bd9f.png)
-
 
 ## Step 1: Model Training
 ### Upload dataset and register
+![image](https://github.com/user-attachments/assets/74bd66ad-a224-418c-a831-ec74334ecdaa)
 
-![image](https://user-images.githubusercontent.com/4667129/129119881-c0cf253e-b0a5-42e2-92a8-20a5c7879e5a.png)
+![image](https://github.com/user-attachments/assets/0efd387b-d74d-4d57-bfae-012914e1d2b1)
 
-![image](https://user-images.githubusercontent.com/4667129/129119850-02de4623-3402-43b2-bc7e-eb477e4b537d.png)
+![image](https://github.com/user-attachments/assets/db4ac13a-4f11-422b-885b-251424a99954)
+
+Creating compute cluster:
+![image](https://github.com/user-attachments/assets/4eab5afd-b839-4f4a-85a5-90d051ff21f9)
+
+
 
 ### Use AutoML for finding the best classification model
+Setting to classification and choice Bank data
+![image](https://github.com/user-attachments/assets/cf055e6c-b100-4e42-b6b4-3ab19cbcab6a)
 
 ![image](https://user-images.githubusercontent.com/4667129/129120027-875f0be6-c487-4262-9ffc-370495223e64.png)
 
