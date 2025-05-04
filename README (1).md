@@ -58,7 +58,7 @@ Selection DS2_V2 by recommnedation of the course
 
 
 
-## Step 3: Enabled Application Insights
+## Step 3: Enabled Application Insights 
 
 ![image](https://github.com/user-attachments/assets/6e7742d8-0c9d-4522-9729-cabf8a5d62e8)
 *** run script
@@ -67,121 +67,66 @@ Selection DS2_V2 by recommnedation of the course
 Giving access to insights
 ![image](https://github.com/user-attachments/assets/773fe305-a5f9-4a86-9ada-7802928a6431)
 
+![image](https://github.com/user-attachments/assets/d01a2ee4-f0bb-432d-8591-03b01cdd8c26)
 
+Compaing the logs.
+![image](https://github.com/user-attachments/assets/ae939ceb-229b-49b4-9404-83f41bc8211e)
 
 Once the model is deployed, enable Application Insights to collect the service logs and useful metrics for monitoring purposes.
 
-### Set up Python SDK for Azure in local environment
+## Step 4: Swagger documentation
 
-Make virtual environment in the project directory
+Getting the Swagger URI to connection to local host
 
-```powershell
-mkdir venv
-python -m venv ./venv
-```
+![image](https://github.com/user-attachments/assets/0aac6484-5d1f-4b3e-8511-e1ddda6dff51)
 
-Activate the virtual environment in current shell session
+Make sure the file is in the same folder as Swagger.sh and Serve.py.
+Either download it manualle or use wget Swagger URI.
 
-```powershell
-.\venv\Scripts\activate
-```
+Run Swagger.sh and Serve.py and go to local host.
+![image](https://github.com/user-attachments/assets/25cd4f3b-a527-49b7-a047-d0aa78e1d041)
 
-Install Azure Python ML SDK
+![image](https://github.com/user-attachments/assets/e3c4ff83-fbb7-429a-8069-dcdfc47c67d9)
 
-```powershell
-pip install azureml-core
-```
-
-Due to an SDK bug that caused `"Could not retrieve user token. Please run 'az login'"`, downgrading PyJWT to get around the issue:
-
-```powershell
-python -m pip install --upgrade PyJWT==1.7.1
-```
-
-@ref: https://stackoverflow.com/questions/67488064/get-workspace-failed-azuremlsdk-authenticationexception
-
-Check current versions:
-
-```powershell
-pip show azure-core
-```
-
-```
-Name: azure-core
-Version: 1.17.0
-```
+![image](https://github.com/user-attachments/assets/3e44fd68-adad-490b-9985-5e467981a2d6)
 
 
-```powershell
-pip show PyJWT
-```
-
-```
-Name: PyJWT
-Version: 1.7.1
-```
-
-### Enabled Application Insights using Python script
-
-![image](https://user-images.githubusercontent.com/4667129/129120622-c2e842be-4559-48c3-895e-421e0e03e62b.png)
-
-![image](https://user-images.githubusercontent.com/4667129/129120539-27853550-8331-43ea-848a-cc313fc5f425.png)
-
-Preview logs from the local script
-
-![image](https://user-images.githubusercontent.com/4667129/129120654-d88f6ea1-b411-46a6-89ac-722691b53162.png)
-
-## Step 4: View Swagger Documentation
-
-Swagger.json URL for the endpoint is available to download
-
-![image](https://user-images.githubusercontent.com/4667129/129433043-2e63be75-cb0e-493b-8706-4c9ff099183f.png)
-
-
-Run localhost serving the edownloaded swagger.json that allows CORS for Swagger UI to access
-
-![image](https://user-images.githubusercontent.com/4667129/129433035-1727ea70-70ca-4dd8-b765-20f84d3f8fec.png)
-
-Run Swagger UI
-
-![image](https://user-images.githubusercontent.com/4667129/129433076-f5ab8dbf-f4cd-4c19-9671-653e46a7d63a.png)
-
-Access API documentation from the local swagger.json
-
-![image](https://user-images.githubusercontent.com/4667129/129433082-52e36b54-b028-4dc3-a038-76a78ffdcbc4.png)
 
 ## Step 5: Consume Endpoint
 
 Set up endpoint test script with URI with authentication key and sample test data
 
-![image](https://user-images.githubusercontent.com/4667129/129434783-82c120b4-c872-4da2-869b-6542fb408c2f.png)
+![image](https://github.com/user-attachments/assets/e52277ef-efea-45c5-97b1-f2d878f28d36)
 
-Test the endpoint
+Test the endpoint and a data.json file was created
 
-![image](https://user-images.githubusercontent.com/4667129/129434801-843586c9-f5fe-463e-b03a-83db5a26c16e.png)
+![image](https://github.com/user-attachments/assets/1afeee88-5423-4a31-957f-daa62e857133)
 
 
 ## Step 6: Pipeline Automation
 
 Using Python SDK in Jupyter Notebook to create a ML pipeline
 
-![image](https://user-images.githubusercontent.com/4667129/129459282-65b3cbd4-d83c-49b1-9b96-bbe30c83d63e.png)
+![image](https://github.com/user-attachments/assets/b4091236-7d18-41d5-926a-1ba0f3995b49)
+
 
 A pipeline endpoint is also created programatically.
 
-![image](https://user-images.githubusercontent.com/4667129/129459356-c4481166-4e05-473a-af95-38c4311c1186.png)
+![image](https://github.com/user-attachments/assets/b2ee30d6-52bf-4f43-a806-a2f79033a2ef)
+
 
 The pipeline steps show the input bank marketing data set and the AutoML model where the model trainings happen. Also, the pipeline REST endpdoint is active for triggers to execute.
 
-![image](https://user-images.githubusercontent.com/4667129/129459490-801dd325-8679-4932-aa55-b71edbe9b0d0.png)
+![image](https://github.com/user-attachments/assets/79f63ee2-4ff3-4b13-9457-02f0ba7f95e4)
 
-Trigger the endpoint with proper authentication within Jupyter Notebook for a new pipeline execution and use RunDetails widget to show the step runs.
+
+#####Trigger the endpoint with proper authentication within Jupyter Notebook for a new pipeline execution and use RunDetails widget to show the step runs.
 
 ![image](https://user-images.githubusercontent.com/4667129/129459607-d795183f-fa39-4734-9f4b-9ca40abd0029.png)
 
 The scheduled run also shows in ML Studio.
 
-![image](https://user-images.githubusercontent.com/4667129/129460183-f73fd810-80e7-4440-872b-c8c3ad302115.png)
+![image](https://github.com/user-attachments/assets/b4091236-7d18-41d5-926a-1ba0f3995b49)
 
 
 # Screen Recording
