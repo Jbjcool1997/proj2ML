@@ -47,21 +47,23 @@ Creating compute cluster:
 Setting to classification and choice Bank data
 ![image](https://github.com/user-attachments/assets/cf055e6c-b100-4e42-b6b4-3ab19cbcab6a)
 
-![image](https://user-images.githubusercontent.com/4667129/129120027-875f0be6-c487-4262-9ffc-370495223e64.png)
 
-![image](https://user-images.githubusercontent.com/4667129/129120128-a730e484-4332-4e30-9db9-e6a9d189de74.png)
-
-![image](https://user-images.githubusercontent.com/4667129/129120152-becff75c-6cd2-45d1-9092-403d3acb2c79.png)
 
 
 ## Step 2: Model Deployment
 
 ### Deploy the best model
 
-![image](https://user-images.githubusercontent.com/4667129/129460832-621b4167-aa5c-4bf1-ba47-3a6eeed382eb.png)
+![image](https://github.com/user-attachments/assets/afd68a29-077a-4651-b8f7-befb2a3ce5f6)
+![image](https://github.com/user-attachments/assets/e7bdfbba-6444-4bdf-98fc-51f4b1664c13)
+![image](https://github.com/user-attachments/assets/ad6ca531-2d04-4d09-9219-e255922f386b)
 
-
+![image](https://github.com/user-attachments/assets/410a7a02-94e9-420b-86b2-d51307296983)
+![image](https://github.com/user-attachments/assets/26a04a96-7edf-4d40-baf1-9e6a2f276a7e)
+**Running***
 ## Step 3: Enabled Application Insights
+![image](https://github.com/user-attachments/assets/97c9d0ba-811c-4f5d-9399-b8d2735a7fa5)
+
 
 Once the model is deployed, enable Application Insights to collect the service logs and useful metrics for monitoring purposes.
 
