@@ -133,17 +133,19 @@ When testing the endpoint a data.json file will be created and an result will be
 
 ## Step 6: Create, publish and consime a Pipeline
 
-Using Python SDK in Jupyter Notebook to create a ML pipeline
+Using Python SDK in Azure ML notebooks to create a ML pipeline
 
 ![image](https://github.com/user-attachments/assets/b4091236-7d18-41d5-926a-1ba0f3995b49)
 
-
-A pipeline endpoint is also created programatically.
+When completed Creating a pipeline endpoint as well.
 
 ![image](https://github.com/user-attachments/assets/b2ee30d6-52bf-4f43-a806-a2f79033a2ef)
 
 
 The pipeline steps show the input bank marketing data set and the AutoML model where the model trainings happen. Also, the pipeline REST endpdoint is active for triggers to execute.
+
+![image](https://github.com/user-attachments/assets/014c2ca6-ae9c-4be8-aafe-b756af2c13eb)
+
 
 ![image](https://github.com/user-attachments/assets/79f63ee2-4ff3-4b13-9457-02f0ba7f95e4)
 
