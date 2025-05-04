@@ -32,29 +32,41 @@ This project involves preparing a dataset for use with Azure's Automated ML to i
 ## Step 1: Automated ML Experiment setup
 ### Upload dataset and register
 
-Upload the banking data
+### Upload the banking data
+
 ![image](https://github.com/user-attachments/assets/edad202a-b2ae-4469-b3fb-f5ebf00c47a6)
+
 ![image](https://github.com/user-attachments/assets/f4291420-d967-4b66-8039-f0b3ca2261ab)
 
-Set-up Compute Cluster
+### Set-up Compute Cluster
+
 ![image](https://github.com/user-attachments/assets/7e6c5e8d-00d8-4904-8ff8-9de9c4375c4e)
-Selection DS2_V2 by recommnedation of the course
+
+### Selection DS2_V2 by recommnedation of the course
+
 ![image](https://github.com/user-attachments/assets/636fc624-9b99-4400-be62-3d986e249289)
 
 
 
+### In AutoML setting task type equal classification, to find the best classification model for column "y" 
 
-### Use AutoML for finding the best classification model
+
 ![image](https://github.com/user-attachments/assets/47948605-5c6e-4773-950f-d679ca22cbcd)
 
-![image](https://github.com/user-attachments/assets/1c7b0d34-c032-49ea-8191-e4f2b44b3643)
-![image](https://github.com/user-attachments/assets/ffdd557d-1835-40a0-a1c8-b6b25cff6292)
+Showing all the runs under jobs
 
+![image](https://github.com/user-attachments/assets/1c7b0d34-c032-49ea-8191-e4f2b44b3643)
+
+Entering Proj2ML and sorting by AUC for finding the best classification model
+
+![image](https://github.com/user-attachments/assets/ffdd557d-1835-40a0-a1c8-b6b25cff6292)
 
 ## Step 2: Deploy the best Model
 
-### Deploy the best model
+### Picking the best model
 ![image](https://github.com/user-attachments/assets/493d07d9-6898-45f9-8af4-68b1b3b3f892)
+
+### Deploying the best model
 
 ![image](https://github.com/user-attachments/assets/045e9e6d-1975-48e8-9246-89cbd6e14f15)
 
