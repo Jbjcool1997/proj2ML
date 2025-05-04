@@ -144,11 +144,9 @@ When completed Creating a pipeline endpoint as well.
 
 The pipeline steps show the input bank marketing data set and the AutoML model where the model trainings happen. Also, the pipeline REST endpdoint is active for triggers to execute.
 
-![image](https://github.com/user-attachments/assets/014c2ca6-ae9c-4be8-aafe-b756af2c13eb)
-
-
 ![image](https://github.com/user-attachments/assets/79f63ee2-4ff3-4b13-9457-02f0ba7f95e4)
 
+![image](https://github.com/user-attachments/assets/014c2ca6-ae9c-4be8-aafe-b756af2c13eb)
 
 #####Trigger the endpoint with proper authentication within Jupyter Notebook for a new pipeline execution and use RunDetails widget to show the step runs.
 
