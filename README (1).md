@@ -45,6 +45,8 @@ Selection DS2_V2 by recommnedation of the course
 
 
 ### Use AutoML for finding the best classification model
+![image](https://github.com/user-attachments/assets/47948605-5c6e-4773-950f-d679ca22cbcd)
+
 ![image](https://github.com/user-attachments/assets/1c7b0d34-c032-49ea-8191-e4f2b44b3643)
 ![image](https://github.com/user-attachments/assets/ffdd557d-1835-40a0-a1c8-b6b25cff6292)
 
