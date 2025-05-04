@@ -30,7 +30,6 @@ This project involves preparing a dataset for use with Azure's Automated ML to i
 # Key Steps
  
 ## Step 1: Automated ML Experiment setup
-### Upload dataset and register
 
 ### Upload the banking data
 
@@ -134,11 +133,13 @@ Now we have the neccesary packets we can enable the application insights.
 
 ![image](https://github.com/user-attachments/assets/e52277ef-efea-45c5-97b1-f2d878f28d36)
 
-Test the endpoint by running the endpoint.py
+### Test the endpoint by running the endpoint.py
+
 
 Python endpoint.py
 
-When testing the endpoint a data.json file will be created and an result will be provided in the gitbash.
+
+### When testing the endpoint a data.json file will be created and an result will be provided in the gitbash.
 
 ![image](https://github.com/user-attachments/assets/1afeee88-5423-4a31-957f-daa62e857133)
 
@@ -154,13 +155,15 @@ When completed Creating a pipeline endpoint as well.
 ![image](https://github.com/user-attachments/assets/b2ee30d6-52bf-4f43-a806-a2f79033a2ef)
 
 
-The pipeline steps show the input bank marketing data set and the AutoML model where the model trainings happen. Also, the pipeline REST endpdoint is active for triggers to execute.
+The pipeline steps show the input bank marketing data set and the AutoML model where the model trainings happen.
 
 ![image](https://github.com/user-attachments/assets/79f63ee2-4ff3-4b13-9457-02f0ba7f95e4)
 
 ![image](https://github.com/user-attachments/assets/014c2ca6-ae9c-4be8-aafe-b756af2c13eb)
 
-#####Trigger the endpoint with proper authentication within Jupyter Notebook for a new pipeline execution and use RunDetails widget to show the step runs.
+### Trigger the endpoint with proper authentication within Azure ML Notebook for a new pipeline execution.
+Script avaliable in:
+aml-pipelines-with-automated-machine-learning-stepv1.ipynb
 
 ![image](https://user-images.githubusercontent.com/4667129/129459607-d795183f-fa39-4734-9f4b-9ca40abd0029.png)
 
