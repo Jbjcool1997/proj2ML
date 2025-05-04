@@ -174,15 +174,17 @@ The scheduled run also shows in ML Studio.
 
 # Screen Recording
 
-Video: https://youtu.be/M8rDx_4pgHk
+Video: [https://youtu.be/M8rDx_4pgHk](https://youtu.be/a7xu_ZUTK7s?si=XlB1c7yJUVzchBEQ)
+Please ignore my comment about not getting any context about the data, as I filmed it in a small rush adhering the 4 hours limit for the workspace. 
+
 
 # Future Work
 
 Some improvements for future consideration
 
-+ **Feature engineering**: as explained in the video, since the labels in the provided dataset are highly imbalanced (89% "No" vs 11% "Yes"), this can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class. Improving this will surely be beneficial. One way is to find more data of the smaller class, or using synthetic data generation technique is also useful. 
++ **Training optimization**: Due to the 4 hours limit, experiment timeout was added multiple places - Without timeout AutoMl could have developed more models and potentailly have created a even better performance model.
 
-+ **Training optimization**: increasing experiment timeout and number of cross validation for AutoML can help find better performance model.
++ **Improved data**: The column "y" is not balanced well, the majority of is "No", as shown on the image below, this can create a mislead the models accuracy. This could hanled by gathering more data or adressing the issue in the model by apply synthetic data generation techniques to help balance the dataset.
 
-+ **Service monitoring**: using benchmark tools such as Apache Benchmark to examine the service throughput in current compute target to see if it meets the performance target or needs to have more computation resource. Also, having the benchmark information we can estimate the acceptable time per request then set up alerts in Application Insights to detect early sign of performance degrading to proactively plan for higher compute resource. 
+![image](https://github.com/user-attachments/assets/54c96d09-2aad-4587-b803-17818682ecf8)
 
