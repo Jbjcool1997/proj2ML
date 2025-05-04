@@ -29,10 +29,10 @@ This project involves preparing a dataset for use with Azure's Automated ML to i
 
 # Key Steps
  
-## Step 1: Model Training
+## Step 1: Automated ML Experiment setup
 ### Upload dataset and register
 
-Upload data
+Upload the banking data
 ![image](https://github.com/user-attachments/assets/edad202a-b2ae-4469-b3fb-f5ebf00c47a6)
 ![image](https://github.com/user-attachments/assets/f4291420-d967-4b66-8039-f0b3ca2261ab)
 
@@ -51,14 +51,31 @@ Selection DS2_V2 by recommnedation of the course
 ![image](https://github.com/user-attachments/assets/ffdd557d-1835-40a0-a1c8-b6b25cff6292)
 
 
-## Step 2: Model Deployment
+## Step 2: Deploy the best Model
 
 ### Deploy the best model
+![image](https://github.com/user-attachments/assets/493d07d9-6898-45f9-8af4-68b1b3b3f892)
+
 ![image](https://github.com/user-attachments/assets/045e9e6d-1975-48e8-9246-89cbd6e14f15)
 
 
 
 ## Step 3: Enabled Application Insights 
+
+First step is to ensure we have the neccesary tools in Gitbash, fx ensuring we have the right versions.
+
+Python --Version
+3.8.5
+
+az --Version
+azure cli 2.11.1
+core 2.11.1
+Telementru 1.0.5
+
+Extensions:
+azure-cli-ml 1.13.0
+
+
 
 ![image](https://github.com/user-attachments/assets/6e7742d8-0c9d-4522-9729-cabf8a5d62e8)
 *** run script
