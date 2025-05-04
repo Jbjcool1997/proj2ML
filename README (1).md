@@ -60,6 +60,15 @@ Selection DS2_V2 by recommnedation of the course
 
 ## Step 3: Enabled Application Insights
 
+![image](https://github.com/user-attachments/assets/6e7742d8-0c9d-4522-9729-cabf8a5d62e8)
+*** run script
+
+![image](https://github.com/user-attachments/assets/85286db3-e251-451b-a77e-c122f3ae2f3c)
+Giving access to insights
+![image](https://github.com/user-attachments/assets/773fe305-a5f9-4a86-9ada-7802928a6431)
+
+
+
 Once the model is deployed, enable Application Insights to collect the service logs and useful metrics for monitoring purposes.
 
 ### Set up Python SDK for Azure in local environment
