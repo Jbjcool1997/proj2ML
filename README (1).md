@@ -171,6 +171,8 @@ The scheduled run also shows in ML Studio.
 
 ![image](https://github.com/user-attachments/assets/b4091236-7d18-41d5-926a-1ba0f3995b49)
 
+### Additionally, please note the RunDetails are missing due to unknown error, mentor are investigating. 
+https://knowledge.udacity.com/questions/1067711
 
 # Screen Recording
 
@@ -187,4 +189,33 @@ Some improvements for future consideration
 + **Improved data**: The column "y" is not balanced well, the majority of is "No", as shown on the image below, this can create a mislead the models accuracy. This could hanled by gathering more data or adressing the issue in the model by apply synthetic data generation techniques to help balance the dataset.
 
 ![image](https://github.com/user-attachments/assets/54c96d09-2aad-4587-b803-17818682ecf8)
+
+# Sources and comments
+Please note all optional exercises has not been included, to ensure all mandatory steps are comepleted before the 4 hours VM limit. 
+
+Through this project the following sources has been used:
+
+Exercise: Deploy an Azure Machine learning Model:
+https://learn.udacity.com/nanodegrees/nd00333/parts/cd0601/lessons/4f5b345f-6b30-4de3-888a-1671462b5181/concepts/eb290f3b-4034-4a29-b310-f5aaa1fe82bd?_gl=1*18fv2od*_gcl_au*MTAwMjkxNTcxMy4xNzQxOTc3MTU4*_ga*OTEwMzMzMzcwLjE3NDE5NzcxNTg.*_ga_CF22GKVCFK*MTc0NjM0MjYwOS4xNi4xLjE3NDYzNDI2MzAuMzkuMC4w&lesson_tab=lesson
+
+Exercise: Enable Application Insight:
+https://learn.udacity.com/nanodegrees/nd00333/parts/cd0601/lessons/4f5b345f-6b30-4de3-888a-1671462b5181/concepts/2ce6f670-a80a-4271-86cd-9b263f3fbd08?_gl=1*18fv2od*_gcl_au*MTAwMjkxNTcxMy4xNzQxOTc3MTU4*_ga*OTEwMzMzMzcwLjE3NDE5NzcxNTg.*_ga_CF22GKVCFK*MTc0NjM0MjYwOS4xNi4xLjE3NDYzNDI2MzAuMzkuMC4w&lesson_tab=lesson
+
+Exercise: Swagger Documentation:
+https://learn.udacity.com/nanodegrees/nd00333/parts/cd0601/lessons/4c649d96-344e-4693-b06a-cfa2eed81248/concepts/86def9c3-8397-4ec5-9b23-50e9febffc9f?_gl=1*18fv2od*_gcl_au*MTAwMjkxNTcxMy4xNzQxOTc3MTU4*_ga*OTEwMzMzMzcwLjE3NDE5NzcxNTg.*_ga_CF22GKVCFK*MTc0NjM0MjYwOS4xNi4xLjE3NDYzNDI2MzAuMzkuMC4w&lesson_tab=lesson
+
+Exercise: Consume Deployed Service:
+https://learn.udacity.com/nanodegrees/nd00333/parts/cd0601/lessons/4c649d96-344e-4693-b06a-cfa2eed81248/concepts/48aefbea-6a07-4862-a4cc-a73cdfb94740?_gl=1*18fv2od*_gcl_au*MTAwMjkxNTcxMy4xNzQxOTc3MTU4*_ga*OTEwMzMzMzcwLjE3NDE5NzcxNTg.*_ga_CF22GKVCFK*MTc0NjM0MjYwOS4xNi4xLjE3NDYzNDI2MzAuMzkuMC4w&lesson_tab=lesson
+
+Exercise: Create a Pipeline
+https://learn.udacity.com/nanodegrees/nd00333/parts/cd0601/lessons/85ec5c03-03fd-4e0e-8fa2-3dbec4751105/concepts/711af577-86fc-4fa7-a49e-a8c88132aa5e?_gl=1*18fv2od*_gcl_au*MTAwMjkxNTcxMy4xNzQxOTc3MTU4*_ga*OTEwMzMzMzcwLjE3NDE5NzcxNTg.*_ga_CF22GKVCFK*MTc0NjM0MjYwOS4xNi4xLjE3NDYzNDI2MzAuMzkuMC4w&lesson_tab=lesson
+
+Exercise: Publish and Consume a Pipeline
+https://learn.udacity.com/nanodegrees/nd00333/parts/cd0601/lessons/85ec5c03-03fd-4e0e-8fa2-3dbec4751105/concepts/05ae20b6-81b0-4b96-b89c-5a0cac57f7c6?_gl=1*18fv2od*_gcl_au*MTAwMjkxNTcxMy4xNzQxOTc3MTU4*_ga*OTEwMzMzMzcwLjE3NDE5NzcxNTg.*_ga_CF22GKVCFK*MTc0NjM0MjYwOS4xNi4xLjE3NDYzNDI2MzAuMzkuMC4w&lesson_tab=lesson
+
+README structure:
+https://github.com/NLKNguyen/nd00333_AZMLND_C2/tree/main
+
+
+
 
