@@ -165,7 +165,6 @@ The pipeline steps show the input bank marketing data set and the AutoML model w
 Script avaliable in:
 aml-pipelines-with-automated-machine-learning-stepv1.ipynb
 
-![image](https://user-images.githubusercontent.com/4667129/129459607-d795183f-fa39-4734-9f4b-9ca40abd0029.png)
 
 The scheduled run also shows in ML Studio.
 
@@ -177,6 +176,7 @@ https://knowledge.udacity.com/questions/1067711
 # Screen Recording
 
 Video: [https://youtu.be/M8rDx_4pgHk](https://youtu.be/a7xu_ZUTK7s?si=XlB1c7yJUVzchBEQ)
+
 Please ignore my comment about not getting any context about the data, as I filmed it in a small rush adhering the 4 hours limit for the workspace. 
 
 
