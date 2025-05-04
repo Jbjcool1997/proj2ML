@@ -68,19 +68,23 @@ Python --Version
 3.8.5
 
 az --Version
+
 azure cli 2.11.1
+
 core 2.11.1
+
 Telementru 1.0.5
 
 Extensions:
 azure-cli-ml 1.13.0
 
-
-
+Now we have the neccesary packets we can enable the application insights.
 ![image](https://github.com/user-attachments/assets/6e7742d8-0c9d-4522-9729-cabf8a5d62e8)
-*** run script
-
+Ensure "service.update(enable_app_insights=True)" is set to true in the file logs.py
+![image](https://github.com/user-attachments/assets/d01a2ee4-f0bb-432d-8591-03b01cdd8c26)
+Run the "python logs.py"
 ![image](https://github.com/user-attachments/assets/85286db3-e251-451b-a77e-c122f3ae2f3c)
+
 Giving access to insights
 ![image](https://github.com/user-attachments/assets/773fe305-a5f9-4a86-9ada-7802928a6431)
 
