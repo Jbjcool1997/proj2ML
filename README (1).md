@@ -146,16 +146,16 @@ Python endpoint.py
 
 ## Step 6: Create, publish and consime a Pipeline
 
-Using Python SDK in Azure ML notebooks to create a ML pipeline
+### Using Python SDK in Azure ML notebooks to create a ML pipeline
 
 ![image](https://github.com/user-attachments/assets/b4091236-7d18-41d5-926a-1ba0f3995b49)
 
-When completed Creating a pipeline endpoint as well.
+### When completed Creating a pipeline endpoint as well.
 
 ![image](https://github.com/user-attachments/assets/b2ee30d6-52bf-4f43-a806-a2f79033a2ef)
 
 
-The pipeline steps show the input bank marketing data set and the AutoML model where the model trainings happen.
+### The pipeline steps show the input bank marketing data set and the AutoML model where the model trainings happen.
 
 ![image](https://github.com/user-attachments/assets/79f63ee2-4ff3-4b13-9457-02f0ba7f95e4)
 
@@ -166,7 +166,7 @@ Script avaliable in:
 aml-pipelines-with-automated-machine-learning-stepv1.ipynb
 
 
-The scheduled run also shows in ML Studio.
+### The scheduled run also shows in ML Studio.
 
 ![image](https://github.com/user-attachments/assets/b4091236-7d18-41d5-926a-1ba0f3995b49)
 
