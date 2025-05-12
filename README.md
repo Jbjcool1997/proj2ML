@@ -170,6 +170,11 @@ aml-pipelines-with-automated-machine-learning-stepv1.ipynb
 
 ![image](https://github.com/user-attachments/assets/b4091236-7d18-41d5-926a-1ba0f3995b49)
 
+### RunDetails
+
+![image](https://github.com/user-attachments/assets/d55f3d97-ca9f-4675-8a72-a2e42722cc99)
+
+
 
 # Screen Recording
 
