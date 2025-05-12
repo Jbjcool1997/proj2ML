@@ -170,8 +170,6 @@ aml-pipelines-with-automated-machine-learning-stepv1.ipynb
 
 ![image](https://github.com/user-attachments/assets/b4091236-7d18-41d5-926a-1ba0f3995b49)
 
-### Additionally, please note the RunDetails are missing due to unknown error, mentor are investigating. 
-https://knowledge.udacity.com/questions/1067711
 
 # Screen Recording
 
